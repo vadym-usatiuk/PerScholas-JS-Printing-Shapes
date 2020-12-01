@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript - Exercise 1 - Printing Shapes</h2>
+
+    <p>
+      Task A. Box <br>
+      Write a program box.html that asks the user to input width and height and
+      prints a solid rectangular box of the requested size using asterisks.<br>
+      Also, print a line Shape: between user input and the printed shape (to
+      separate input from output).<br>
+    </p>
+
+    <p id="demo"></p>
+
+    <script type="text/javascript">
+      var heightNumber = prompt("Please provide a number for height:");
+      var widthNumber = prompt("Please provide a number for width:");
+
+      for (var m = 1; m <= heightNumber; m++) {
+        for (var n = 1; n <= widthNumber; n++) {
+          document.write("*" + " ");
+        }
+        document.write("<br />");
+      }
+    </script>
+  </body>
+</html>

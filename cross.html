@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript - Exercise 1 - Printing Shapes</h2>
+
+    <p>
+      Task C. Cross <br />
+      Write a program cross.html that asks the user to input the shape size, and
+      <br />
+      prints a diagonal cross of that dimension. <br />
+    </p>
+    <p id="demo2"></p>
+    <script type="text/javascript">
+      var shapeSize = prompt("Please provide a number for shape size:");
+      for (var first = 0; first < shapeSize; first++) {
+        var textLine = "";
+        for (var second = 0; second < shapeSize; second++) {
+          textLine +=
+            second === first || second === shapeSize - 1 - first ? "*" : " ";
+        }
+        console.log(textLine);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript - Exercise 1 - Printing Shapes</h2>
+
+    <p>
+      Task B. Checkerboard. <br>
+      Write a program checkerboard.html that asks the user to input width and height <br>
+      and prints a rectangular checkerboard of the requested size using <br>
+      asterisks and spaces (alternating).<br>
+    </p>
+
+    <p id="demo2"></p>
+
+    <script type="text/javascript">
+      var widthNumber = prompt("Please provide a number for width:");
+      var heightNumber = prompt("Please provide a number for height:");
+
+      var space = " ";
+      var asterisk = "*";
+
+      for (var row = 0; row < heightNumber; row++) {
+        var textLine = "";
+        for (var col = 0; col < widthNumber; col++) {
+          if (col % 2) {
+            if (row % 2) {
+                textLine += asterisk;
+            } else {
+                textLine += space;
+            }
+          } else {
+            if (row % 2) {
+                textLine += space;
+            } else {
+                textLine += asterisk;
+            }
+          }
+        }
+        console.log(textLine);
+      }
+    </script>
+  </body>
+</html>

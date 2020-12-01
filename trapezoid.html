@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript - Exercise 1 - Printing Shapes</h2>
+
+    <p>
+    <pre>
+    Task F. Upside-down trapezoid.
+    Write a program trapezoid.html that prints an upside-down trapezoid of
+    given width and height.
+    However, if the input height is impossibly large for the given width, then
+    the program should report, Impossible shape!
+    </pre>
+    </p>
+
+    <p id="demo"></p>
+
+    <script>
+      var widthNumber = prompt("Please provide a number for width:");
+      var heightNumber = prompt("Please provide a number for height:");
+      var widthFirst = widthNumber;
+      document.write("<pre>");
+      for (let i = 1; i <= heightNumber; i++) {
+        let startedWidth = widthFirst - widthNumber;
+        for (let a = 0; a < startedWidth; a += 2) {
+          document.write(" ");
+        }
+        for (let b = 0; b <= widthNumber; b++) {
+          document.write("*");
+        }
+        for (let a = 0; a < startedWidth; a += 2) {
+          document.write(" ");
+        }
+        widthNumber -= 2;
+        document.write("<br />");
+      }
+      document.write("</pre>");
+    </script>
+  </body>
+</html>

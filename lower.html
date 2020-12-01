@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript - Exercise 1 - Printing Shapes</h2>
+
+    <p>
+      Write a program lower.html that prints the bottom-left half of a square,
+      given the side length.<br />
+    </p>
+    <p id="demo2"></p>
+    <script type="text/javascript">
+      var shapeSize = prompt("Please provide a number for shape size:");
+      var first, second, textLine;
+      for (first = 1; first <= shapeSize; first++) {
+        for (second = 1; second < first; second++) {
+          textLine += "*";
+        }
+        console.log(textLine);
+        textLine = "";
+      }
+    </script>
+  </body>
+</html>
